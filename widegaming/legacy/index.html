@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Widegaming Legacy</title>
+  <link rel="stylesheet" href="/widegaming/legacy/style.css">
+  <script src="https://kit.fontawesome.com/3519619ea4.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</head>
+
+<body class="body gameshtml">
+  <a href="/widegaming/"><h1>Agora o Widegaming se transformou no Playground, um lugar melhor para jogar. O Widegaming Legacy não receberá jogos novos, por isso clique aqui e abra o novo Playground.</h1></a>
+  <nav class="nav blank"></nav>
+  <card class="card gamestitle">
+    <h1 class="h1 gamestxttitle">Widegaming Legacy</h1>
+  </card>
+  <div>
+    <a href="/widegaming/legacy/hitthebox/">
+      <img src="/widegaming/legacy/hitthebox/icon.png" class="game">
+      <h3 class="gametxt">Hit the Box - Desafio - Jogo oficial Widegaming</h3>
+    </a>
+
+    <a href="/widegaming/legacy/impossiblegame/">
+      <img src="/widegaming/legacy/impossiblegame/icon.png" class="game">
+      <h3 class="gametxt">Impossible Game - Desafio - Jogo oficial Widegaming</h3>
+    </a>
+
+    <a href="/widegaming/legacy/zedasvacas/">
+      <img src="/widegaming/legacy/zedasvacas/icon.png" class="game">
+      <h3 class="gametxt">Zé das Vacas - Aventura - Jogo oficial com PyxelAI</h3>
+    </a>
+
+    <br>
+  </div>
+  <br>
+
+  <p>
+    <button><i class="fa-solid fa-upload"> publique</i></button>
+  </p>
+  <div>
+    <form action="#" name="Post a Game" method="post"
+      enctype="multipart/form-data">
+      <div>
+        <h1>Não é mais possível postar jogos no Widegaming.</h1>
+        <input type="file" name="file" id="file" placeholder="Upload do arquivo">
+        <p>ou...</p>
+        <input type="url" name="URL" placeholder="Link do Jogo">
+      </div>
+      <br>
+      <br>
+      <input type="text" name="Type" placeholder="Tipo (categoria) do jogo" required>
+      <br>
+      <br>
+      <br>
+      <div>
+        <label class="tf">Entre com sua conta Pyxel para continuar</label>
+        <input type="text" name="Login" placeholder="Seu nome de usuário ou email" required>
+      </div>
+      <br>
+      <div>
+        <input type="password" name="Password" placeholder="Sua senha">
+      </div>
+      <br>
+      <div>
+        <input type="checkbox" name="Made by me" required>
+        <label>Esse jogo foi feito por mim ou minha equipe?</label>
+      </div>
+      <br>
+      <br>
+      <input type="submit" value="Publicar">
+    </form>
+  </div>
+  <nav class="nav blank"></nav>
+  <script>
+    const nav_links = document.querySelectorAll('a');
+    nav_links.forEach(anchor => anchor.addEventListener('click', (event) => {
+      nav_links.forEach(anchor => anchor.className = '');
+      anchor.className = 'active';
+    }));
+    $("p").click(function (e) {
+      var div = $("+ div", this);
+      div.css("display", div.css("display") === "block" ? "none" : "block");
+      $(this.nodeName + " + div").not(div).css("display", "none");
+    })
+  </script>
+
+  <!--Barra de navegação começa aqui-->
+  <br><br><br>
+  <nav class="nav">
+    <a href="/"><img class="navicon" src="/icons/pyxel.png"></a>
+    <a href="/pesquisa/"><img class="navicon" src="/icons/search.png"></a>
+    <a href="/ai/"><img class="navicon" src="/icons/ai.png"></a>
+    <a href="/widegaming/"><img class="navactive" src="/icons/widegaminglegacy.png"></a>
+    <a href="https://pyxelchat.slack.com/"><img class="navicon" src="/icons/chat.png"></a>
+  </nav>
+</body>
+
+</html>

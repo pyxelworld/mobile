@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minha Conta Pyxel</title>
+  <link href="style.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/3519619ea4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <h1 class="title">Minha Conta</h1>
+  <card class="widget">
+    <h1>Crie uma conta!</h1>
+    <p>Uma conta Pyxel para poder deixar seu próprio rastro em nosso mundo</p>
+    <br><form action="https://formsubmit.co/pyxelsoftware@outlook.com" method="post" name="_captcha">
+      <p>Adicione uma foto de perfil: <input type="file" name="Profile_Photo"></p>
+      <p><input type="text" placeholder="Nome de usuário*" name="UserName" required> Uma hashtag e dois números aleatórios serão adicionados depois do nome de usuário. Exemplo: User#38</p>
+      <p><input type="tel" placeholder="Número de celular" name="Phone"> Recomandamos um número para a segurança de sua conta.</p>
+      <input type="email" placeholder="Email*" name="Email" required>
+      <input type="password" placeholder="Escolha uma senha*" name="Password" required minlength="8">
+      <p><input type="date" name="Birthdate"> Caso você coloque uma data, você receberá PyC em seu aniversário! A Pyxel é um app seguro para todas as idades.</p>
+      <input type="submit" value="Entre em nosso mundo">
+      <p>Um email será enviado quando sua conta for criada.</p>
+    </form>
+    <br>
+  </card><br>
+
+  <card class="widget">
+    <h1>Começe a usar a Pyxel transferindo dados de uma conta Play</h1>
+    <p>Você publica jogos no Playground e agora também quer entrar no mundo Pyxel? Transfira sua conta de Play para Pyxel sem perder dados.</p>
+    <br><form action="https://formsubmit.co/26346cc26e8b0567c5b9f53972f01366" method="post" name="_captcha">
+      <p>Adicione uma foto de perfil: <input type="file" name="Profile_Photo"></p>
+      <p><input type="tel" placeholder="Número de celular" name="Phone"> Recomandamos um número para a segurança de sua conta.</p>
+      <p><input type="date" name="Birthdate"> Caso você coloque uma data, você receberá PyC em seu aniversário! A Pyxel é um app seguro para todas as idades.</p>
+      <p>Entre com sua conta Play (que irá se transformar em conta Pyxel) para continuar</p>
+      <input type="text" placeholder="Login*" name="Login" required>
+      <input type="password" placeholder="Senha ou código*" name="Password" required>
+      <input type="submit" value="Transferir">
+      <p>Um email será enviado quando sua conta for transferida.</p>
+      <p>O "P" na tag do seu Play name irá sumir (porque ele indica conta Play). Exemplo: User#P23 ficará User#23.</p>
+    </form>
+    <br>
+  </card><br>
+
+  <card class="widget">
+    <h1>Modifique sua conta</h1>
+    <p>Mude algum dado da sua conta Pyxel facilmente</p>
+    <br><form action="https://formsubmit.co/26346cc26e8b0567c5b9f53972f01366" method="post" name="_captcha">
+      <p>Mude sua foto de perfil: <input type="file" name="New_Profile_Photo"></p>
+      <input type="text" placeholder="Novo nome de usuário*" name="New_UserName">
+      <p><input type="tel" placeholder="Novo número" name="New_Phone"></p>
+      <input type="email" placeholder="Novo Email*" name="New_Email">
+      <input type="password" placeholder="Nova senha*" name="New_Password" required minlength="8">
+      <br>
+      <p>Entre com uma conta Pyxel para continuar</p>
+      <input type="text" placeholder="Login Atual*" name="Login" required>
+      <input type="password" placeholder="Senha atual ou código*" name="Password" required>
+      <input type="submit" value="Modificar">
+      <p>Deixe em branco o que não quiser mudar. Caso o formulário não tiver modificações, ele será ignorado. Não é possível mudar a data de aniversário.</p>
+    </form>
+    <br>
+  </card><br>
+
+  <card class="widget">
+    <h1>Transfira dados de duas contas Pyxel</h1>
+    <p>Tem duas contas? Transfira dados entre elas e fique com só uma.</p>
+    <br><form action="https://formsubmit.co/26346cc26e8b0567c5b9f53972f01366" method="post" name="_captcha">
+      <p>Entre com a Conta 1</p>
+      <input type="text" placeholder="Login*" name="Account1_Login" required>
+      <input type="password" placeholder="Digite a senha ou código*" name="Account1_Password" required>
+      <p>Entre com a Conta 2</p>
+      <input type="text" placeholder="Login*" name="Account2_Login" required>
+      <input type="password" placeholder="Digite a senha ou código*" name="Account2_Password" required>
+      <p>Qual nome de usuário você quer usar? 
+        <select name="UserName" required>
+          <option value="account1">Nome de usuário da Conta 1</option>
+          <option value="account2">Nome de usuário da Conta 2</option>
+        </select>
+      </p><br>
+      <p>Qual email você quer usar (pule se for o mesmo)? 
+        <select name="Email" required>
+          <option value="account1">Email da Conta 1</option>
+          <option value="account2">Email da Conta 2</option>
+        </select>
+      </p>
+      <p>Qual senha você quer usar (pule se for o mesmo)? 
+        <select name="Password" required>
+          <option value="account1">Senha da Conta 1</option>
+          <option value="account2">Senha da Conta 2</option>
+        </select>
+      </p><br>
+      <p>Qual número de celular você quer usar (pule se for o mesmo ou nulo)? 
+        <select name="Phone" required>
+          <option value="account1">Número da Conta 1</option>
+          <option value="account2">Número da Conta 2</option>
+        </select>
+      </p><br>
+      <p>Qual data de aniversário você quer usar (pule se for o mesmo ou nulo)? 
+        <select name="Birthday" required>
+          <option value="account1">Aniversário da Conta 1</option>
+          <option value="account2">Aniversário da Conta 2</option>
+        </select>
+      </p><br>
+      <input type="submit" value="Transferir">
+      <p>Ao fazer isso, uma conta levará para a outra (se alguém abrir o link do nome de usuário antigo, ele será levado pro novo) até algum usuário criar uma conta com o mesmo.</p>
+      <p>O saldo de Pyxel Coins, transações, posts (rastros) etc serão juntados para apenas uma conta.</p>
+      <p>O Pyxel Mail com o nome de usuário antigo será deletado.</p>
+      <p>Você não poderá entrar com as credenciais antigas.</p>
+    </form>
+    <br>
+  </card><br>
+
+  <card class="widget">
+    <h1>Desative sua conta temporáriamente</h1>
+    <p>Dando uma pausa da internet? Desative interações com sua conta temporáriamente.</p>
+    <br><form action="https://formsubmit.co/26346cc26e8b0567c5b9f53972f01366" method="post" name="_captcha">
+      <p><input type="number" placeholder="*" name="TimeToDeactivateAccount" required min="7" max="60"> Escolha em quanto tempo você quer sua conta de volta ao normal (digite em dias, entre 7 e 60)*</p>
+      <p><input type="checkbox" required> Eu estou ciente de que se eu escolher uma data longa, não poderei deixar rastros e outros não poderão interagir com a minha conta até ele acabar.</p>
+      <br>
+      <p>Entre com sua conta Pyxel</p>
+      <input type="text" placeholder="Login*" name="Login" required>
+      <input type="password" placeholder="Digite a senha ou código*" name="Password" required>
+      <input type="submit" value="Desativar">
+      <p>Isso poderá demorar um pouco. Até logo!</p>
+    </form>
+    <br>
+  </card><br>
+ 
+  <card class="widget">
+    <h1>Delete sua conta</h1>
+    <p>Apague seus rastros em nosso mundo e delete sua conta</p>
+    <br><form action="https://formsubmit.co/26346cc26e8b0567c5b9f53972f01366" method="post" name="_captcha">
+      <p><input type="number" placeholder="*" name="TimeToDeleteAccount" required min="0" max="30"> Você pode deletar sua conta imediatamente ou em até 30 dias. Escolha o número de dias aqui*</p>
+      <p><input type="checkbox" required> Eu estou ciente de que se eu escolher 0 ou uma data curta não poderei recuperar meu nome de usuário e PyC depois.</p>
+      <br>
+      <p>Entre com sua conta Pyxel pela última vez...</p>
+      <input type="text" placeholder="Login*" name="Login" required>
+      <input type="password" placeholder="Digite a senha ou código*" name="Password" required>
+      <p><input type="checkbox" required> Eu estou ciente de que se eu deletar esta conta, mesmo recuperando-a, meus rastros ficarão apenas privados. Não quer isso? Apenas desative-a com o formulário acima.</p>
+      <input type="submit" value="Deletar">
+      <p>Esperamos que você volte! 😭 Isso poderá demorar um pouco.</p>
+    </form>
+    <br>
+  </card><br>
+
+  <card class="widget">
+    <h1>Recupere seu nome de usuário e PyC</h1>
+    <p>Se você ainda estiver dentro do praso de recuperar uma conta Pyxel, responda este formulário</p>
+    <br><form action="https://formsubmit.co/26346cc26e8b0567c5b9f53972f01366" method="post" name="_captcha">
+      <p>Entre com sua conta Pyxel novamente!</p>
+      <input type="text" placeholder="Login*" name="LoginToRecover" required>
+      <input type="password" placeholder="Digite a senha ou código*" name="Password" required>
+      <input type="submit" value="Recuperar">
+      <p>Bem-vindo de volta! 😄 Isso poderá demorar um pouco.</p>
+    </form>
+    <br>
+  </card><br>
+
+  <!--Barra de navegação começa aqui-->
+  <br><br><br>
+  <nav class="nav">
+    <a href="/"><img class="navactive" src="/icons/pyxel.png"></a>
+    <a href="/pesquisa/"><img class="navicon" src="/icons/search.png"></a>
+    <a href="/ai/"><img class="navicon" src="/icons/ai.png"></a>
+    <a href="/widegaming/"><img class="navicon" src="/icons/widegaming.png"></a>
+    <a href="https://pyxelchat.slack.com/"><img class="navicon" src="/icons/chat.png"></a>
+  </nav>
+</body>
+
+</html>

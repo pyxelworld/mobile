@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pyxel Libraries</title>
+  <link href="style.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/3519619ea4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <h1 class="title">Bibliotecas e Livros</h1><br>
+  <card class="widget">
+    <h1>Crie uma biblioteca</h1>
+    <p>Publique seus próprios livros em sua nova bilioteca Pyxel</p>
+    <br>
+    <form action="https://formsubmit.co/26346cc26e8b0567c5b9f53972f01366" method="post" name="_captcha">
+      <input type="text" placeholder="Nome da biblioteca*" name="Library_Name" required>
+      <p>Adicione uma capa para a sua biblioteca: <input type="file" name="Library_Photo"></p>
+      <br>
+      <p>Entre com uma conta Pyxel para continuar</p>
+      <input type="text" placeholder="Login*" name="Login" required>
+      <input type="password" placeholder="Digite a senha ou código*" name="Password" required>
+      <input type="submit" value="Criar">
+      <p>O código da biblioteca será enviado por email.</p>
+    </form>
+    <br>
+  </card><br>
+
+  <card class="widget">
+    <h1>Publique um livro</h1>
+    <p>Adicione um livro para sua biblioteca</p>
+    <br>
+    <form action="https://formsubmit.co/26346cc26e8b0567c5b9f53972f01366" method="post" name="_captcha">
+      <input type="text" placeholder="Nome do livro*" name="Book_Name" required>
+      <input type="text" placeholder="Descrição curta" name="Book_Description">
+      <input type="number" placeholder="Código da biblioteca*" name="Library_Code">
+      <p>Adicione uma capa para o seu livro: <input type="file" name="Book_Photo"></p>
+      <p>Anexe o seu livro: <input type="file" name="Book_File"></p>
+      <br>
+      <p>Entre com uma conta Pyxel para continuar</p>
+      <input type="text" placeholder="Login*" name="Login" required>
+      <input type="password" placeholder="Digite a senha ou código*" name="Password" required>
+      <input type="submit" value="Publicar">
+      <p>O código do livro será enviado por email.</p>
+    </form>
+    <br>
+  </card><br>
+
+  <card class="widget">
+    <h1>Modifique algo</h1>
+    <p>Mude algum dado da sua biblioteca ou livro</p>
+    <br>
+    <form action="https://formsubmit.co/26346cc26e8b0567c5b9f53972f01366" method="post" name="_captcha">
+      <input type="number" placeholder="Código (livro ou biblioteca)*" name="Code">
+      <input type="text" placeholder="Novo nome" name="New_Name_LibraryBook">
+      <input type="text" placeholder="Nova descrição curta (livro apenas)" name="New_Book_Description">
+      <p>Mude a capa da sua biblioteca ou livro: <input type="file" name="New_Photo-LibraryBook"></p>
+      <br>
+      <p>Entre com uma conta Pyxel para continuar</p>
+      <input type="text" placeholder="Login*" name="Login" required>
+      <input type="password" placeholder="Digite a senha ou código*" name="Password" required>
+      <input type="submit" value="Modificar">
+      <p>O código necessário foi enviado por email. Caso o formulário não tiver modificações, ele será ignorado.</p>
+    </form>
+    <br>
+  </card><br>
+
+  <card class="widget">
+    <h1>Delete algo</h1>
+    <p>Delete um livro ou uma biblioteca inteira</p>
+    <br>
+    <form action="https://formsubmit.co/26346cc26e8b0567c5b9f53972f01366" method="post" name="_captcha">
+      <input type="number" placeholder="Código (livro ou biblioteca)*" name="Code">
+      <br>
+      <p>Entre com uma conta Pyxel para continuar</p>
+      <input type="text" placeholder="Login*" name="Login" required>
+      <input type="password" placeholder="Digite a senha ou código*" name="Password" required>
+      <p><input type="checkbox" required> Eu estou ciente de que não posso recuperar o que foi deletado e desejo
+        continuar.</p>
+      <input type="submit" value="Deletar">
+      <p>O código necessário foi enviado por email. Isso poderá demorar um pouco.</p>
+    </form>
+    <br>
+  </card><br>
+
+
+  <!--Barra de navegação começa aqui-->
+  <br><br><br>
+  <nav class="nav">
+    <a href="/"><img class="navicon" src="/icons/pyxel.png"></a>
+    <a href="/pesquisa/"><img class="navactive" src="/icons/search.png"></a>
+    <a href="/ai/"><img class="navicon" src="/icons/ai.png"></a>
+    <a href="/widegaming/"><img class="navicon" src="/icons/widegaming.png"></a>
+    <a href="https://pyxelchat.slack.com/"><img class="navicon" src="/icons/chat.png"></a>
+</body>
+
+</html>
